@@ -1,0 +1,13 @@
+Practice: working with objects in collections,
+converting text from file into collection object and operations with it;
+
+*model: Box, HeavyBox extends Box implements Comparable<HeavyBox>;
+
+*test:
+1)TestCollections:
+-(tests 1-7): List, lambda, stream, forEach, Iterator, Comparator, etc. (Box, HeavyBox);
+-(tests 8-13): BufferedReader, List<String>, Map<String, Integer> map = new HashMap<>(),
+               Set<String> set = new TreeSet<>(strings), etc. (working with text file)
+
+2)Exercises:
+-(tests): BufferedReader, List, Map, lambda, stream, etc.  (working with text file);
