@@ -20,6 +20,21 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class TestCollections {
 
+    List<HeavyBox> list;
+
+    @BeforeEach
+    void setUp() {
+        list = new ArrayList<>(List.of(
+                new HeavyBox(1, 2, 3, 4),
+                new HeavyBox(3, 3, 3, 4),
+                new HeavyBox(2, 6, 5, 3),
+                new HeavyBox(2, 3, 4, 7),
+                new HeavyBox(1, 3, 3, 4),
+                new HeavyBox(1, 2, 3, 4),
+                new HeavyBox(1, 1, 1, 1)
+        ));
+    }
+
     // 1 (done)--------------------------------
     @Test
     //@Disabled
@@ -270,22 +285,6 @@ public class TestCollections {
         assertEquals("would", strings.get(strings.size() - 1));
     }
 
-
-
-    List<HeavyBox> list;
-
-    @BeforeEach
-    void setUp() {
-        list = new ArrayList<>(List.of(
-                new HeavyBox(1, 2, 3, 4),
-                new HeavyBox(3, 3, 3, 4),
-                new HeavyBox(2, 6, 5, 3),
-                new HeavyBox(2, 3, 4, 7),
-                new HeavyBox(1, 3, 3, 4),
-                new HeavyBox(1, 2, 3, 4),
-                new HeavyBox(1, 1, 1, 1)
-        ));
-    }
 
     static final String REGEXP = "\\W+"; // for splitting into words
 
