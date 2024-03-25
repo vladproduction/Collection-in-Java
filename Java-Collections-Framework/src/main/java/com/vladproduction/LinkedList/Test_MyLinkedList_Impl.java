@@ -1,12 +1,10 @@
 package com.vladproduction.LinkedList;
 
-import com.vladproduction.LinkedList.MyLinkedList;
-
 /**
  * Created by vladproduction on 24-Mar-24
  */
 
-public class Test_MyLinkedList {
+public class Test_MyLinkedList_Impl {
     public static void main(String[] args) {
         MyLinkedList list = new MyLinkedList();
         list.add(1);

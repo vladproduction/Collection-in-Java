@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Created by vladproduction on 23-Mar-24
  */
 
-public class Main_ArrayList {
+public class Main_ArrayList_methods {
     public static void main(String[] args) {
 
         //dynamic array

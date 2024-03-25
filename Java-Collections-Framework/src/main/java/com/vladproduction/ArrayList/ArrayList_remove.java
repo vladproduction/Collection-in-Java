@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Created by vladproduction on 23-Mar-24
  */
 
-public class Remove_example {
+public class ArrayList_remove {
     public static void main(String[] args) {
 
         ArrayList<Integer> list = new ArrayList<>();
