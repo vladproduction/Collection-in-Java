@@ -1,4 +1,7 @@
 # Collection-in-Java
+**This repository is a collection of examples by projects about Collection API in Java;**
+***
+
 List, Set, Queue; Map
 
 The collection in java is the root interface of the collection framework and provide several classes and interfaces to represent a group of individual objects as a single unit. List, Set, and Queue are the main child interfaces of the collection interface.
