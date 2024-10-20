@@ -8,6 +8,7 @@ public class Room {
     private String type;
     private int capacity;
     private double price;
+    public boolean breakfast;
 
     public Room(String city, String type, int capacity, double price) {
         this.city = city;
@@ -46,6 +47,14 @@ public class Room {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public boolean isBreakfast() {
+        return breakfast;
+    }
+
+    public void setBreakfast(boolean breakfast) {
+        this.breakfast = breakfast;
     }
 
     @Override
