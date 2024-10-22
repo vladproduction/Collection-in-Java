@@ -1,9 +1,13 @@
 package com.vladproduction._01_demo;
 
+import java.util.Comparator;
 import java.util.Objects;
 
-public class Room {
+public class Room implements Comparable<Room>{
 
+    public static Comparator<Room> PRICE_RATE = Comparator.comparing(Room::getPrice)     //by price first
+                                                          .thenComparing(Room::getCity)  //by city name second parameter
+                                                          .thenComparing(Room::getType); //by type third parameter
     private String city;
     private String type;
     private int capacity;
@@ -73,5 +77,11 @@ public class Room {
     @Override
     public String toString() {
         return String.format("Room: %s %s %s %s", this.city, this.type, this.capacity, this.price);
+    }
+
+    @Override
+    public int compareTo(Room o) {
+        int result = this.getCity().compareTo(o.getCity());
+        return result != 0 ? result : this.getType().compareTo(o.getType());
     }
 }
